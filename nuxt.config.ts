@@ -6,7 +6,13 @@ export default defineNuxtConfig({
     ],
     modules: [
         "@unocss/nuxt",
+        "nuxt-icon",
+        "nuxt-svgo",
     ],
+    svgo: {
+        autoImportPath: "~/assets",
+        global: false,
+    },
     typescript: {
         typeCheck: true,
         tsConfig: {
