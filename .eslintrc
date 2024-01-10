@@ -5,9 +5,11 @@
         "browser": true
     },
     "extends": [
-        "@nuxtjs/eslint-config-typescript"
+        "@nuxtjs/eslint-config-typescript",
+        "@unocss"
     ],
     "rules": {
+        "@unocss/blocklist": "warn",
         "indent": ["warn", 4],
         "space-before-function-paren": ["warn", {"anonymous": "always", "named": "never"}],
         "semi": ["warn", "always"],
