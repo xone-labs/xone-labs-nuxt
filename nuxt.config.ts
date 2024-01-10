@@ -7,4 +7,15 @@ export default defineNuxtConfig({
     modules: [
         "@unocss/nuxt",
     ],
+    typescript: {
+        typeCheck: true,
+        tsConfig: {
+            compilerOptions: {
+                noErrorTruncation: true,
+                jsx: "preserve",
+                jsxImportSource: "vue",
+                verbatimModuleSyntax: true,
+            },
+        },
+    },
 });
